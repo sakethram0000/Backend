@@ -103,6 +103,9 @@ if (configuredOrigins == null || configuredOrigins.Length == 0)
     };
 }
 
+// Optional: allow credentials (cookies) from configured origins. Default: false.
+var allowCorsCredentials = builder.Configuration.GetValue<bool?>("Cors:AllowCredentials") ?? false;
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
@@ -110,6 +113,13 @@ builder.Services.AddCors(options =>
         policy.WithOrigins(configuredOrigins)
               .AllowAnyHeader()
               .AllowAnyMethod();
+
+        if (allowCorsCredentials)
+        {
+            // If the frontend needs to send cookies/credentials (fetch credentials: 'include'),
+            // enable AllowCredentials. This must not be used with AllowAnyOrigin.
+            policy.AllowCredentials();
+        }
     });
 });
 
