@@ -90,9 +90,10 @@ namespace MyWebApi.Controllers
         public async Task<ActionResult<UserProfile>> CreateCarrier([FromBody] UserProfile carrier)
         {
             // Use IdGenerationService for generating CarrierId
-            carrier.Id = await _idGenerationService.GenerateCarrierIdAsync();
+            var carrierId = await _idGenerationService.GenerateCarrierIdAsync();
+            var newCarrier = carrier with { Id = carrierId };
 
-            var result = await _canvasService.CreateCarrierAsync(carrier);
+            var result = await _canvasService.CreateCarrierAsync(newCarrier);
             return Ok(result);
         }
 
@@ -130,8 +131,9 @@ namespace MyWebApi.Controllers
         [Authorize(Roles = "admin")]
         public async Task<ActionResult<CarrierDetails>> CreateCarrierDetails([FromBody] CarrierDetails carrier)
         {
-            carrier.Id = await _idGenerationService.GenerateCarrierIdAsync();
-            var result = await _canvasService.CreateCarrierDetailsAsync(carrier);
+            var carrierId = await _idGenerationService.GenerateCarrierIdAsync();
+            var newCarrier = carrier with { CarrierId = carrierId };
+            var result = await _canvasService.CreateCarrierDetailsAsync(newCarrier);
             return Ok(result);
         }
 
@@ -197,8 +199,9 @@ namespace MyWebApi.Controllers
         [Authorize(Roles = "admin,carrier")]
         public async Task<ActionResult<ProductDetails>> CreateProduct([FromBody] ProductDetails product)
         {
-            product.Id = await _idGenerationService.GenerateProductIdAsync();
-            var result = await _canvasService.CreateProductAsync(product);
+            var productId = await _idGenerationService.GenerateProductIdAsync();
+            var newProduct = product with { Id = productId };
+            var result = await _canvasService.CreateProductAsync(newProduct);
             return Ok(result);
         }
 
@@ -234,8 +237,9 @@ namespace MyWebApi.Controllers
         [Authorize(Roles = "admin,carrier")]
         public async Task<ActionResult<RuleDetails>> CreateRule([FromBody] RuleDetails rule)
         {
-            rule.Id = await _idGenerationService.GenerateRuleIdAsync();
-            var result = await _canvasService.CreateRuleAsync(rule);
+            var ruleId = await _idGenerationService.GenerateRuleIdAsync();
+            var newRule = rule with { RuleId = ruleId };
+            var result = await _canvasService.CreateRuleAsync(newRule);
             return Ok(result);
         }
 
@@ -297,8 +301,9 @@ namespace MyWebApi.Controllers
         public async Task<ActionResult<object>> CreateUser([FromBody] CreateUserRequest request)
         {
             // Generate new user ID
-            request.Id = await _idGenerationService.GenerateUserIdAsync();
-            var result = await _canvasService.CreateUserAsync(request);
+            var userId = await _idGenerationService.GenerateUserIdAsync();
+            // CreateUserRequest doesn't have an Id property, pass userId to service
+            var result = await _canvasService.CreateUserAsync(request, userId);
             return Ok(result);
         }
 

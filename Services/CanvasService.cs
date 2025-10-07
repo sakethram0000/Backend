@@ -26,7 +26,7 @@ public interface ICanvasService
     Task<CarrierDetails> UpdateCarrierDetailsAsync(string id, CarrierDetails carrier);
     Task DeleteCarrierDetailsAsync(string id);
     Task<CanvasAnalyticsResponse> GetAnalyticsAsync(DateTime? since);
-    Task<CreateUserResponse> CreateUserAsync(CreateUserRequest request);
+    Task<CreateUserResponse> CreateUserAsync(CreateUserRequest request, string? userId = null);
 }
 
 public class CanvasService : ICanvasService
@@ -430,20 +430,20 @@ public class CanvasService : ICanvasService
         return response;
     }
 
-    public async Task<CreateUserResponse> CreateUserAsync(CreateUserRequest request)
+    public async Task<CreateUserResponse> CreateUserAsync(CreateUserRequest request, string? userId = null)
     {
         // Check if user exists
         var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
         if (existingUser != null)
             throw new InvalidOperationException("User already exists");
 
-        var userId = await _idGenerationService.GenerateUserIdAsync();
+        var finalUserId = userId ?? await _idGenerationService.GenerateUserIdAsync();
         var orgId = await _idGenerationService.GenerateOrganizationIdAsync();
         var tempPassword = GenerateTemporaryPassword();
         
         var user = new DbUser
         {
-            Id = userId,
+            Id = finalUserId,
             Name = request.Name,
             Email = request.Email,
             PasswordHash = _passwordService.HashPassword(tempPassword),
@@ -459,7 +459,7 @@ public class CanvasService : ICanvasService
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
         
-        return new CreateUserResponse(userId, request.Email, tempPassword, "User created successfully");
+        return new CreateUserResponse(finalUserId, request.Email, tempPassword, "User created successfully");
     }
 
     public async Task<CarrierDetails> GetCarrierDetailsAsync(string id)

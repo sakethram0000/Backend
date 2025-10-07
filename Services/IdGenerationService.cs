@@ -11,6 +11,7 @@ namespace MyWebApi.Services
         Task<string> GenerateOrganizationIdAsync();
         Task<string> GenerateProductIdAsync();
         Task<string> GenerateRuleIdAsync();
+        string GenerateId(string prefix);
     }
 
     public class IdGenerationService : IIdGenerationService
@@ -50,6 +51,11 @@ namespace MyWebApi.Services
         {
             var count = await _context.Rules.CountAsync();
             return $"rul-{(count + 1):D3}";
+        }
+
+        public string GenerateId(string prefix)
+        {
+            return $"{prefix}-{Guid.NewGuid().ToString("N")[..8]}";
         }
     }
 }

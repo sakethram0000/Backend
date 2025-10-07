@@ -115,7 +115,7 @@ public class AuthController : ControllerBase
             // Create new user
             var user = new DbUser
             {
-                Id = _idGenerationService.GenerateId("user"),
+                Id = await _idGenerationService.GenerateUserIdAsync(),
                 Name = request.Name ?? request.Email,
                 Email = request.Email,
                 PasswordHash = _passwordService.HashPassword(request.Password),
