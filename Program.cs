@@ -107,14 +107,20 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    // Enable HTTPS redirection during development where it's configured
+    app.UseHttpsRedirection();
 }
-
-app.UseHttpsRedirection();
+else
+{
+    // In production (e.g., Render) HTTPS may be handled by the platform/load balancer.
+    // Avoid forcing HTTPS redirection here to prevent redirect/port detection warnings.
+}
 
 app.UseCors("AllowFrontend");
 
@@ -122,6 +128,10 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Lightweight root and health endpoints so the service responds at '/'
+app.MapGet("/", () => Results.Ok(new { status = "ok", service = "MyWebApi", env = app.Environment.EnvironmentName }));
+app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
 
 // Seed initial data
 using (var scope = app.Services.CreateScope())
