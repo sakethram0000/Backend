@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using MyWebApi.Data;
 using MyWebApi.Models;
 using MyWebApi.Services;
+using System;
+using System.Threading.Tasks;
 
 namespace MyWebApi.Controllers;
 
@@ -32,20 +34,21 @@ public class AuthController : ControllerBase
     {
         try
         {
-            if (string.IsNullOrWhiteSpace(request.Email) || string.IsNullOrWhiteSpace(request.Password))
+            if (request == null || string.IsNullOrWhiteSpace(request.Email) || string.IsNullOrWhiteSpace(request.Password))
             {
                 return BadRequest(new { message = "Email and password are required" });
             }
-/*
+
+            // Fetch user from DB (ensure 'user' is declared in this scope)
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email && u.IsActive);
-            
+
             if (user == null)
             {
                 return Unauthorized(new { message = "Invalid email or password" });
             }
 
             // Check if account is locked
-            if (user.LockoutEnd.HasValue && user.LockoutEnd > DateTime.UtcNow)
+            if (user.LockoutEnd.HasValue && user.LockoutEnd.Value > DateTime.UtcNow)
             {
                 return Unauthorized(new { message = "Account is temporarily locked" });
             }
@@ -60,7 +63,7 @@ public class AuthController : ControllerBase
                     user.LockoutEnd = DateTime.UtcNow.AddMinutes(15);
                 }
                 await _context.SaveChangesAsync();
-                
+
                 return Unauthorized(new { message = "Invalid email or password" });
             }
 
@@ -69,9 +72,9 @@ public class AuthController : ControllerBase
             user.LockoutEnd = null;
             user.LastLoginAt = DateTime.UtcNow;
             await _context.SaveChangesAsync();
-*/
-            // Generate JWT token
-            var token = _jwtService.GenerateToken(user.Id, user.Email, user.Roles ?? "User");
+
+            // Generate JWT token using user object (service must expose an overload accepting a user)
+            var token = _jwtService.GenerateToken(user);
 
             return Ok(new
             {
@@ -98,7 +101,7 @@ public class AuthController : ControllerBase
     {
         try
         {
-            if (string.IsNullOrWhiteSpace(request.Email) || string.IsNullOrWhiteSpace(request.Password))
+            if (request == null || string.IsNullOrWhiteSpace(request.Email) || string.IsNullOrWhiteSpace(request.Password))
             {
                 return BadRequest(new { message = "Email and password are required" });
             }
@@ -127,7 +130,7 @@ public class AuthController : ControllerBase
             await _context.SaveChangesAsync();
 
             // Generate JWT token
-            var token = _jwtService.GenerateToken(user.Id, user.Email, user.Roles);
+            var token = _jwtService.GenerateToken(user);
 
             return Ok(new
             {

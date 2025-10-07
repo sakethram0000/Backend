@@ -18,13 +18,12 @@ var hardcodedFallbackConn = "postgresql://retool:npg_Bwa4hd0bcozm@ep-wispy-math-
 var connectionString = !string.IsNullOrWhiteSpace(envConn) ? envConn : (!string.IsNullOrWhiteSpace(configConn) ? configConn : hardcodedFallbackConn);
 
 // Detect Postgres-style URLs and use Npgsql provider when appropriate.
+var npgsqlConn = connectionString;
 if (connectionString.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase) || connectionString.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase) || connectionString.Contains("Host=") || connectionString.Contains("Port="))
 {
     // If the connection string is a URI (postgres://user:pass@host:port/dbname), convert to Npgsql-compatible connection string.
-    var npgsqlConn = connectionString;
     if (connectionString.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase) || connectionString.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase))
     {
-        // Use NpgsqlConnectionStringBuilder to parse the URI style connection string.
         var uri = new Uri(connectionString);
         var userInfo = uri.UserInfo.Split(':');
         var builderN = new Npgsql.NpgsqlConnectionStringBuilder
@@ -34,8 +33,8 @@ if (connectionString.StartsWith("postgres://", StringComparison.OrdinalIgnoreCas
             Username = userInfo.Length > 0 ? userInfo[0] : string.Empty,
             Password = userInfo.Length > 1 ? userInfo[1] : string.Empty,
             Database = uri.AbsolutePath.TrimStart('/'),
-            SslMode = Npgsql.SslMode.Require,
-            TrustServerCertificate = true
+            SslMode = Npgsql.SslMode.Require
+            // Do NOT set TrustServerCertificate here (obsolete). Configure certificate/trust properly in your environment.
         };
         npgsqlConn = builderN.ToString();
     }
@@ -78,7 +77,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey)),
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
             ValidateIssuer = true,
             ValidIssuer = issuer,
             ValidateAudience = true,
@@ -128,7 +127,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
