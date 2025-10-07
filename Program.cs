@@ -90,12 +90,24 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// Add CORS
+// Add CORS - read allowed origins from configuration (appsettings / environment) with a fallback
+var configuredOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
+if (configuredOrigins == null || configuredOrigins.Length == 0)
+{
+    configuredOrigins = new[]
+    {
+        "http://localhost:3000",
+        "http://localhost:3001",
+        "http://localhost:3002",
+        "https://frontend-woad-three-37.vercel.app"
+    };
+}
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "http://localhost:3001", "http://localhost:3002")
+        policy.WithOrigins(configuredOrigins)
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
