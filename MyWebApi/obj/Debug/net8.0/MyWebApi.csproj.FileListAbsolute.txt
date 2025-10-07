@@ -1,0 +1,412 @@
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\appsettings.Development.json
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\appsettings.json
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.exe
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.deps.json
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.runtimeconfig.json
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.dll
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.pdb
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.csproj.AssemblyReference.cache
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.AssemblyInfoInputs.cache
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.AssemblyInfo.cs
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.csproj.CoreCompileInputs.cache
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.MyWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.MyWebApi.props
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyWebApi.props
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyWebApi.props
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\scopedcss\bundle\MyWebApi.styles.css
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.csproj.Up2Date
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.dll
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\refint\MyWebApi.dll
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.pdb
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.genruntimeconfig.cache
+C:\VS Code\Ankita\Appetite_Backend\MyWebApi\obj\Debug\net8.0\ref\MyWebApi.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Azure.Core.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Azure.Identity.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Humanizer.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.CodeDom.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+c:\VS Code\Ankita\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\appsettings.Development.json
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\appsettings.json
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.exe
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.deps.json
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.runtimeconfig.json
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.pdb
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Azure.Core.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Azure.Identity.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Humanizer.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.CodeDom.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.csproj.AssemblyReference.cache
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.AssemblyInfoInputs.cache
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.AssemblyInfo.cs
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.csproj.CoreCompileInputs.cache
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets.build.json
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets.development.json
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.MyWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.MyWebApi.props
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyWebApi.props
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyWebApi.props
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\scopedcss\bundle\MyWebApi.styles.css
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.csproj.Up2Date
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\refint\MyWebApi.dll
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.pdb
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.genruntimeconfig.cache
+c:\Users\SakethRamRagi\OneDrive - ValueMomentum, Inc\saketh\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\ref\MyWebApi.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\appsettings.json
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.exe
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.deps.json
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.runtimeconfig.json
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\MyWebApi.pdb
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Azure.Core.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Humanizer.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.CodeDom.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.csproj.AssemblyReference.cache
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.AssemblyInfoInputs.cache
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.AssemblyInfo.cs
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.csproj.CoreCompileInputs.cache
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.MyWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.MyWebApi.props
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyWebApi.props
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyWebApi.props
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\scopedcss\bundle\MyWebApi.styles.css
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.csproj.Up2Date
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\refint\MyWebApi.dll
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.pdb
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\MyWebApi.genruntimeconfig.cache
+C:\Appietet_checker\Appetite_Backend\MyWebApi\obj\Debug\net8.0\ref\MyWebApi.dll
+c:\Appietet_checker\Appetite_Backend\MyWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
