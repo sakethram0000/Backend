@@ -12,10 +12,12 @@ namespace MyWebApi.Controllers
     public class CanvasController : ControllerBase
     {
         private readonly ICanvasService _canvasService;
+        private readonly IIdGenerationService _idGenerationService;
 
-        public CanvasController(ICanvasService canvasService)
+        public CanvasController(ICanvasService canvasService, IIdGenerationService idGenerationService)
         {
             _canvasService = canvasService;
+            _idGenerationService = idGenerationService;
         }
 
         #region Helper Methods
@@ -27,7 +29,7 @@ namespace MyWebApi.Controllers
 
         [AllowAnonymous]
         [HttpPost("login")]
-        public async Task<ActionResult<LoginResponse>> Login([FromBody] LoginRequest request)
+        public async Task<ActionResult<LoginResponse>> Login([FromBody] MyWebApi.Models.LoginRequest request)
         {
             try
             {
@@ -42,7 +44,7 @@ namespace MyWebApi.Controllers
 
         [AllowAnonymous]
         [HttpPost("register")]
-        public async Task<ActionResult<RegisterResponse>> Register([FromBody] RegisterRequest request)
+        public async Task<ActionResult<RegisterResponse>> Register([FromBody] MyWebApi.Models.RegisterRequest request)
         {
             var result = await _canvasService.RegisterAsync(request);
             return Ok(result);
@@ -87,6 +89,9 @@ namespace MyWebApi.Controllers
         [Authorize(Roles = "admin")]
         public async Task<ActionResult<UserProfile>> CreateCarrier([FromBody] UserProfile carrier)
         {
+            // Use IdGenerationService for generating CarrierId
+            carrier.Id = await _idGenerationService.GenerateCarrierIdAsync();
+
             var result = await _canvasService.CreateCarrierAsync(carrier);
             return Ok(result);
         }
@@ -125,6 +130,7 @@ namespace MyWebApi.Controllers
         [Authorize(Roles = "admin")]
         public async Task<ActionResult<CarrierDetails>> CreateCarrierDetails([FromBody] CarrierDetails carrier)
         {
+            carrier.Id = await _idGenerationService.GenerateCarrierIdAsync();
             var result = await _canvasService.CreateCarrierDetailsAsync(carrier);
             return Ok(result);
         }
@@ -191,6 +197,7 @@ namespace MyWebApi.Controllers
         [Authorize(Roles = "admin,carrier")]
         public async Task<ActionResult<ProductDetails>> CreateProduct([FromBody] ProductDetails product)
         {
+            product.Id = await _idGenerationService.GenerateProductIdAsync();
             var result = await _canvasService.CreateProductAsync(product);
             return Ok(result);
         }
@@ -227,6 +234,7 @@ namespace MyWebApi.Controllers
         [Authorize(Roles = "admin,carrier")]
         public async Task<ActionResult<RuleDetails>> CreateRule([FromBody] RuleDetails rule)
         {
+            rule.Id = await _idGenerationService.GenerateRuleIdAsync();
             var result = await _canvasService.CreateRuleAsync(rule);
             return Ok(result);
         }
@@ -288,6 +296,8 @@ namespace MyWebApi.Controllers
         [Authorize(Roles = "admin")]
         public async Task<ActionResult<object>> CreateUser([FromBody] CreateUserRequest request)
         {
+            // Generate new user ID
+            request.Id = await _idGenerationService.GenerateUserIdAsync();
             var result = await _canvasService.CreateUserAsync(request);
             return Ok(result);
         }
