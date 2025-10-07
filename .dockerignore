@@ -1,9 +1,0 @@
-bin/
-obj/
-.vscode/
-.git
-.gitignore
-*.user
-*.suo
-*.log
-node_modules/
