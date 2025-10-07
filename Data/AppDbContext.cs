@@ -1,6 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure;
-using Npgsql.EntityFrameworkCore.PostgreSQL.NamingConventions;
 using MyWebApi.Models;
 
 namespace MyWebApi.Data;
@@ -18,11 +16,10 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // When using PostgreSQL, prefer snake_case lower-cased identifiers to match existing DBs
-        modelBuilder.UseSnakeCaseNamingConvention();
-
         modelBuilder.Entity<DbUser>(entity =>
         {
+            // Map to lowercase table names in Postgres (unquoted identifiers are lowercase)
+            entity.ToTable("users");
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Id).HasMaxLength(450).IsRequired();
             entity.Property(e => e.Name).HasMaxLength(200).IsRequired();
@@ -44,6 +41,7 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<DbCarrier>(entity =>
         {
+            entity.ToTable("carriers");
             entity.HasKey(e => e.CarrierId);
             entity.Property(e => e.CarrierId).HasMaxLength(450).IsRequired();
             entity.Property(e => e.LegalName).HasMaxLength(300).IsRequired();
@@ -80,6 +78,7 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<DbRule>(entity =>
         {
+            entity.ToTable("rules");
             entity.HasKey(e => e.RuleId);
             entity.Property(e => e.RuleId).HasMaxLength(450).IsRequired();
             entity.Property(e => e.Title).HasMaxLength(200).IsRequired();
@@ -101,5 +100,9 @@ public class AppDbContext : DbContext
             entity.HasIndex(e => e.NaicsCodes).HasDatabaseName("IDX_Rules_Naics");
             entity.HasIndex(e => new { e.Status, e.EffectiveFrom, e.EffectiveTo }).HasDatabaseName("IDX_Rules_Status_Eff");
         });
+        // Map other entities that don't have custom configuration
+        modelBuilder.Entity<DbProduct>().ToTable("products");
+        modelBuilder.Entity<DbEvent>().ToTable("events");
+        modelBuilder.Entity<DbSubmission>().ToTable("submissions");
     }
 }
