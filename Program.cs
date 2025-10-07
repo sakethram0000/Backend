@@ -13,11 +13,41 @@ var builder = WebApplication.CreateBuilder(args);
 var envConn = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
 var configConn = builder.Configuration.GetConnectionString("DefaultConnection");
 // TODO: Replace the hardcoded fallback below with a real test connection string if needed.
-var hardcodedFallbackConn = "Server=YOUR_SERVER;Database=YOUR_DB;User Id=YOUR_USER;Password=YOUR_PASSWORD;TrustServerCertificate=true;";
+// TEMPORARY TEST CONNECTION: hardcoded Retool Postgres URL (remove before committing to a public repo)
+var hardcodedFallbackConn = "postgresql://retool:npg_Bwa4hd0bcozm@ep-wispy-math-af5ww262.c-2.us-west-2.retooldb.com/retool?sslmode=require";
 var connectionString = !string.IsNullOrWhiteSpace(envConn) ? envConn : (!string.IsNullOrWhiteSpace(configConn) ? configConn : hardcodedFallbackConn);
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString));
+// Detect Postgres-style URLs and use Npgsql provider when appropriate.
+if (connectionString.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase) || connectionString.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase) || connectionString.Contains("Host=") || connectionString.Contains("Port="))
+{
+    // If the connection string is a URI (postgres://user:pass@host:port/dbname), convert to Npgsql-compatible connection string.
+    var npgsqlConn = connectionString;
+    if (connectionString.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase) || connectionString.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase))
+    {
+        // Use NpgsqlConnectionStringBuilder to parse the URI style connection string.
+        var uri = new Uri(connectionString);
+        var userInfo = uri.UserInfo.Split(':');
+        var builderN = new Npgsql.NpgsqlConnectionStringBuilder
+        {
+            Host = uri.Host,
+            Port = uri.Port > 0 ? uri.Port : 5432,
+            Username = userInfo.Length > 0 ? userInfo[0] : string.Empty,
+            Password = userInfo.Length > 1 ? userInfo[1] : string.Empty,
+            Database = uri.AbsolutePath.TrimStart('/'),
+            SslMode = Npgsql.SslMode.Require,
+            TrustServerCertificate = true
+        };
+        npgsqlConn = builderN.ToString();
+    }
+
+    builder.Services.AddDbContext<AppDbContext>(options =>
+        options.UseNpgsql(npgsqlConn));
+}
+else
+{
+    builder.Services.AddDbContext<AppDbContext>(options =>
+        options.UseSqlServer(connectionString));
+}
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<ICheckerService, CheckerService>();
