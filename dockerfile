@@ -1,19 +1,24 @@
+# Stage 1: Build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
+WORKDIR /src
 
-# Copy csproj and restore to leverage layer caching
-COPY ["MyWebApi.csproj", "/app"]
+# Copy csproj and restore dependencies first (cache layer)
+COPY ["MyWebApi.csproj", "./"]
 RUN dotnet restore "MyWebApi.csproj"
 
-# Copy everything else and publish
-COPY *.* /app
+# Copy all source files
+COPY . ./
 RUN dotnet publish "MyWebApi.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-
+# Stage 2: Runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+WORKDIR /app
 
 # Use the PORT environment variable
 ENV ASPNETCORE_URLS=http://+:${PORT:-8080}
 EXPOSE 8080
 
-COPY --from=build /publish .
+# Copy published files from build stage
+COPY --from=build /app/publish ./
+
 ENTRYPOINT ["dotnet", "MyWebApi.dll"]
