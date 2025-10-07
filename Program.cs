@@ -1,3 +1,4 @@
+using System;
 using MyWebApi.Services;
 using MyWebApi.Data;
 using Microsoft.EntityFrameworkCore;
@@ -8,8 +9,15 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Resolve connection string: prefer environment variable, then appsettings, then a hardcoded fallback for quick testing.
+var envConn = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
+var configConn = builder.Configuration.GetConnectionString("DefaultConnection");
+// TODO: Replace the hardcoded fallback below with a real test connection string if needed.
+var hardcodedFallbackConn = "Server=YOUR_SERVER;Database=YOUR_DB;User Id=YOUR_USER;Password=YOUR_PASSWORD;TrustServerCertificate=true;";
+var connectionString = !string.IsNullOrWhiteSpace(envConn) ? envConn : (!string.IsNullOrWhiteSpace(configConn) ? configConn : hardcodedFallbackConn);
+
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(connectionString));
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<ICheckerService, CheckerService>();
@@ -22,8 +30,17 @@ builder.Services.AddScoped<IIdGenerationService, IdGenerationService>();
 builder.Services.AddScoped<SeedService>();
 
 // Add JWT Authentication
-var jwtSettings = builder.Configuration.GetSection("Jwt");
-var secretKey = jwtSettings["SecretKey"];
+// Prefer environment variables for secrets during testing; fall back to appsettings.json, then to hardcoded defaults.
+var jwtSection = builder.Configuration.GetSection("Jwt");
+var envSecret = Environment.GetEnvironmentVariable("Jwt__SecretKey");
+var envIssuer = Environment.GetEnvironmentVariable("Jwt__Issuer");
+var envAudience = Environment.GetEnvironmentVariable("Jwt__Audience");
+var envExpiration = Environment.GetEnvironmentVariable("Jwt__ExpirationMinutes");
+
+var secretKey = !string.IsNullOrWhiteSpace(envSecret) ? envSecret : (jwtSection["SecretKey"] ?? "YourSuperSecretKeyThatIsAtLeast32CharactersLongForProduction!");
+var issuer = !string.IsNullOrWhiteSpace(envIssuer) ? envIssuer : (jwtSection["Issuer"] ?? "AppetiteChecker");
+var audience = !string.IsNullOrWhiteSpace(envAudience) ? envAudience : (jwtSection["Audience"] ?? "AppetiteCheckerUsers");
+var expirationMinutes = !string.IsNullOrWhiteSpace(envExpiration) ? envExpiration : (jwtSection["ExpirationMinutes"] ?? "60");
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -33,9 +50,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey)),
             ValidateIssuer = true,
-            ValidIssuer = jwtSettings["Issuer"],
+            ValidIssuer = issuer,
             ValidateAudience = true,
-            ValidAudience = jwtSettings["Audience"],
+            ValidAudience = audience,
             ValidateLifetime = true,
             ClockSkew = TimeSpan.Zero
         };
