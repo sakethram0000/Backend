@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure;
+using Npgsql.EntityFrameworkCore.PostgreSQL.NamingConventions;
 using MyWebApi.Models;
 
 namespace MyWebApi.Data;
@@ -16,6 +18,9 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        // When using PostgreSQL, prefer snake_case lower-cased identifiers to match existing DBs
+        modelBuilder.UseSnakeCaseNamingConvention();
+
         modelBuilder.Entity<DbUser>(entity =>
         {
             entity.HasKey(e => e.Id);
