@@ -7,7 +7,7 @@ using System.Security.Claims;
 namespace MyWebApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [Authorize] // Require authentication by default
     public class CanvasController : ControllerBase
     {
