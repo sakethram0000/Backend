@@ -21,8 +21,7 @@ public class AppDbContext : DbContext
     {
         modelBuilder.Entity<DbUser>(entity =>
         {
-            // Map to lowercase table names in Postgres (unquoted identifiers are lowercase)
-            entity.ToTable("users");
+            entity.ToTable("Users");
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Id).HasMaxLength(450).IsRequired();
             entity.Property(e => e.Name).HasMaxLength(200).IsRequired();
@@ -33,11 +32,11 @@ public class AppDbContext : DbContext
             entity.Property(e => e.OrganizationName).HasMaxLength(200);
             entity.Property(e => e.AuthProvider).HasMaxLength(50);
             entity.Property(e => e.PasswordResetToken).HasMaxLength(255);
-            entity.Property(e => e.CreatedAt).HasColumnType("text").HasConversion<TextDateTimeConverter>();
-            entity.Property(e => e.LastLoginAt).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
-            entity.Property(e => e.LockoutEnd).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
-            entity.Property(e => e.PasswordResetExpiry).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
-            entity.Property(e => e.IsActive).HasColumnType("boolean").HasDefaultValue(true);
+            entity.Property(e => e.CreatedAt).HasColumnType("datetime2");
+            entity.Property(e => e.LastLoginAt).HasColumnType("datetime2");
+            entity.Property(e => e.LockoutEnd).HasColumnType("datetime2");
+            entity.Property(e => e.PasswordResetExpiry).HasColumnType("datetime2");
+            entity.Property(e => e.IsActive).HasColumnType("bit").HasDefaultValue(true);
             entity.Property(e => e.FailedLoginAttempts).HasDefaultValue(0);
             
             // Indexes
@@ -47,7 +46,7 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<DbCarrier>(entity =>
         {
-            entity.ToTable("carriers");
+            entity.ToTable("Carriers");
             entity.HasKey(e => e.CarrierId);
             entity.Property(e => e.CarrierId).HasMaxLength(450).IsRequired();
             entity.Property(e => e.LegalName).HasMaxLength(300).IsRequired();
@@ -71,12 +70,12 @@ public class AppDbContext : DbContext
             entity.Property(e => e.ContractRef).HasMaxLength(200);
             entity.Property(e => e.BillingContactEmail).HasMaxLength(255);
             entity.Property(e => e.CreatedBy).HasMaxLength(200);
-            entity.Property(e => e.CreatedAt).HasColumnType("text").HasConversion<TextDateTimeConverter>();
-            entity.Property(e => e.UpdatedAt).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
-            entity.Property(e => e.RuleUploadAllowed).HasColumnType("boolean").HasDefaultValue(false);
-            entity.Property(e => e.RuleApprovalRequired).HasColumnType("boolean").HasDefaultValue(true);
-            entity.Property(e => e.DefaultRuleVersioning).HasColumnType("boolean").HasDefaultValue(true);
-            entity.Property(e => e.UseNaicsEnrichment).HasColumnType("boolean").HasDefaultValue(false);
+            entity.Property(e => e.CreatedAt).HasColumnType("datetime2");
+            entity.Property(e => e.UpdatedAt).HasColumnType("datetime2");
+            entity.Property(e => e.RuleUploadAllowed).HasColumnType("bit").HasDefaultValue(false);
+            entity.Property(e => e.RuleApprovalRequired).HasColumnType("bit").HasDefaultValue(true);
+            entity.Property(e => e.DefaultRuleVersioning).HasColumnType("bit").HasDefaultValue(true);
+            entity.Property(e => e.UseNaicsEnrichment).HasColumnType("bit").HasDefaultValue(false);
             
             // Indexes
             entity.HasIndex(e => e.DisplayName).HasDatabaseName("IDX_Carriers_DisplayName");
@@ -85,7 +84,7 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<DbRule>(entity =>
         {
-            entity.ToTable("rules");
+            entity.ToTable("Rules");
             entity.HasKey(e => e.RuleId);
             entity.Property(e => e.RuleId).HasMaxLength(450).IsRequired();
             entity.Property(e => e.Title).HasMaxLength(200).IsRequired();
@@ -100,10 +99,10 @@ public class AppDbContext : DbContext
             entity.Property(e => e.CreatedBy).HasMaxLength(100);
             entity.Property(e => e.MinRevenue).HasPrecision(18, 2);
             entity.Property(e => e.MaxRevenue).HasPrecision(18, 2);
-            entity.Property(e => e.CreatedAt).HasColumnType("text").HasConversion<TextDateTimeConverter>();
-            entity.Property(e => e.UpdatedAt).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
-            entity.Property(e => e.EffectiveFrom).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
-            entity.Property(e => e.EffectiveTo).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
+            entity.Property(e => e.CreatedAt).HasColumnType("datetime2");
+            entity.Property(e => e.UpdatedAt).HasColumnType("datetime2");
+            entity.Property(e => e.EffectiveFrom).HasColumnType("datetime2");
+            entity.Property(e => e.EffectiveTo).HasColumnType("datetime2");
             
             // Indexes
             entity.HasIndex(e => new { e.Carrier, e.Product }).HasDatabaseName("IDX_Rules_Carrier_Product");
@@ -113,20 +112,20 @@ public class AppDbContext : DbContext
         // Configure other entities
         modelBuilder.Entity<DbProduct>(entity =>
         {
-            entity.ToTable("products");
+            entity.ToTable("Products");
             entity.HasKey(e => e.Id);
-            entity.Property(e => e.CreatedAt).HasColumnType("text").HasConversion<TextDateTimeConverter>();
+            entity.Property(e => e.CreatedAt).HasColumnType("datetime2");
         });
         
         modelBuilder.Entity<DbEvent>(entity =>
         {
-            entity.ToTable("events");
+            entity.ToTable("Events");
             entity.HasKey(e => e.EventId);
         });
         
         modelBuilder.Entity<DbSubmission>(entity =>
         {
-            entity.ToTable("submissions");
+            entity.ToTable("Submissions");
             entity.HasKey(e => e.SubmissionId);
         });
     }

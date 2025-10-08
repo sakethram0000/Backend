@@ -20,7 +20,8 @@
       "http://localhost:3001",
       "http://localhost:3002",
       "https://frontend-woad-three-37.vercel.app"
-    ],
+    ]
+  ,
     "AllowCredentials": false
   },
   "AllowedHosts": "*"

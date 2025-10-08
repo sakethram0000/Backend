@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\backend\\Backend\\MyWebApi.csproj": {}
+    "C:\\backend\\Backend\\MyWebApi.csproj": {}
   },
   "projects": {
-    "c:\\backend\\Backend\\MyWebApi.csproj": {
+    "C:\\backend\\Backend\\MyWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\backend\\Backend\\MyWebApi.csproj",
+        "projectUniqueName": "C:\\backend\\Backend\\MyWebApi.csproj",
         "projectName": "MyWebApi",
-        "projectPath": "c:\\backend\\Backend\\MyWebApi.csproj",
+        "projectPath": "C:\\backend\\Backend\\MyWebApi.csproj",
         "packagesPath": "C:\\Users\\SakethRamRagi\\.nuget\\packages\\",
-        "outputPath": "c:\\backend\\Backend\\obj\\",
+        "outputPath": "C:\\backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SakethRamRagi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,10 +43,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "EFCore.NamingConventions": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -66,10 +62,6 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[8.0.0, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[8.0.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

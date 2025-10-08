@@ -9,44 +9,18 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Resolve connection string: prefer environment variable, then appsettings, then a hardcoded fallback for quick testing.
+// Resolve connection string: prefer environment variable, then appsettings
 var envConn = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
 var configConn = builder.Configuration.GetConnectionString("DefaultConnection");
-// TODO: Replace the hardcoded fallback below with a real test connection string if needed.
-// TEMPORARY TEST CONNECTION: hardcoded Retool Postgres URL (remove before committing to a public repo)
-var hardcodedFallbackConn = "postgresql://retool:npg_Bwa4hd0bcozm@ep-wispy-math-af5ww262.c-2.us-west-2.retooldb.com/retool?sslmode=require";
-var connectionString = !string.IsNullOrWhiteSpace(envConn) ? envConn : (!string.IsNullOrWhiteSpace(configConn) ? configConn : hardcodedFallbackConn);
+var connectionString = !string.IsNullOrWhiteSpace(envConn) ? envConn : configConn;
 
-// Detect Postgres-style URLs and use Npgsql provider when appropriate.
-var npgsqlConn = connectionString;
-if (connectionString.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase) || connectionString.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase) || connectionString.Contains("Host=") || connectionString.Contains("Port="))
+if (string.IsNullOrWhiteSpace(connectionString))
 {
-    // If the connection string is a URI (postgres://user:pass@host:port/dbname), convert to Npgsql-compatible connection string.
-    if (connectionString.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase) || connectionString.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase))
-    {
-        var uri = new Uri(connectionString);
-        var userInfo = uri.UserInfo.Split(':');
-        var builderN = new Npgsql.NpgsqlConnectionStringBuilder
-        {
-            Host = uri.Host,
-            Port = uri.Port > 0 ? uri.Port : 5432,
-            Username = userInfo.Length > 0 ? userInfo[0] : string.Empty,
-            Password = userInfo.Length > 1 ? userInfo[1] : string.Empty,
-            Database = uri.AbsolutePath.TrimStart('/'),
-            SslMode = Npgsql.SslMode.Require
-            // Do NOT set TrustServerCertificate here (obsolete). Configure certificate/trust properly in your environment.
-        };
-        npgsqlConn = builderN.ToString();
-    }
+    throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+}
 
-    builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseNpgsql(npgsqlConn).UseSnakeCaseNamingConvention());
-}
-else
-{
-    builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseSqlServer(connectionString));
-}
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<ICheckerService, CheckerService>();
@@ -163,6 +137,19 @@ using (var scope = app.Services.CreateScope())
         
         // Ensure database is created
         await context.Database.EnsureCreatedAsync();
+        
+        // Clean existing data with invalid datetime formats
+        try
+        {
+            await context.Database.ExecuteSqlRawAsync("DELETE FROM Users WHERE TRY_CAST(CreatedAt AS datetime2) IS NULL");
+            await context.Database.ExecuteSqlRawAsync("DELETE FROM Carriers WHERE TRY_CAST(CreatedAt AS datetime2) IS NULL");
+            await context.Database.ExecuteSqlRawAsync("DELETE FROM Rules WHERE TRY_CAST(CreatedAt AS datetime2) IS NULL");
+            await context.Database.ExecuteSqlRawAsync("DELETE FROM Products WHERE TRY_CAST(CreatedAt AS datetime2) IS NULL");
+        }
+        catch (Exception cleanupEx)
+        {
+            Console.WriteLine($"Database cleanup warning: {cleanupEx.Message}");
+        }
         
         // Seed initial data
         var seedService = scope.ServiceProvider.GetRequiredService<SeedService>();

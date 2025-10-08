@@ -56,9 +56,7 @@ namespace MyWebApi.Migrations
                         .HasColumnType("nvarchar(2)");
 
                     b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("SYSUTCDATETIME()");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("CreatedBy")
                         .HasMaxLength(200)
@@ -162,7 +160,7 @@ namespace MyWebApi.Migrations
                     b.HasIndex("PrimaryContactEmail")
                         .HasDatabaseName("IDX_Carriers_PrimaryContactEmail");
 
-                    b.ToTable("Carriers");
+                    b.ToTable("Carriers", (string)null);
                 });
 
             modelBuilder.Entity("MyWebApi.Models.DbEvent", b =>
@@ -192,7 +190,7 @@ namespace MyWebApi.Migrations
 
                     b.HasKey("EventId");
 
-                    b.ToTable("Events");
+                    b.ToTable("Events", (string)null);
                 });
 
             modelBuilder.Entity("MyWebApi.Models.DbProduct", b =>
@@ -229,7 +227,7 @@ namespace MyWebApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("MyWebApi.Models.DbRule", b =>
@@ -257,9 +255,7 @@ namespace MyWebApi.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("SYSUTCDATETIME()");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("CreatedBy")
                         .HasMaxLength(100)
@@ -339,7 +335,7 @@ namespace MyWebApi.Migrations
                     b.HasIndex("Status", "EffectiveFrom", "EffectiveTo")
                         .HasDatabaseName("IDX_Rules_Status_Eff");
 
-                    b.ToTable("Rules");
+                    b.ToTable("Rules", (string)null);
                 });
 
             modelBuilder.Entity("MyWebApi.Models.DbSubmission", b =>
@@ -382,7 +378,7 @@ namespace MyWebApi.Migrations
 
                     b.HasKey("SubmissionId");
 
-                    b.ToTable("Submissions");
+                    b.ToTable("Submissions", (string)null);
                 });
 
             modelBuilder.Entity("MyWebApi.Models.DbUser", b =>
@@ -396,9 +392,7 @@ namespace MyWebApi.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("SYSUTCDATETIME()");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -459,7 +453,7 @@ namespace MyWebApi.Migrations
                     b.HasIndex("PasswordResetToken")
                         .HasDatabaseName("IDX_Users_ResetToken");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 #pragma warning restore 612, 618
         }
