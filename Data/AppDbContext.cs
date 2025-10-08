@@ -14,6 +14,14 @@ public class AppDbContext : DbContext
     public DbSet<DbEvent> Events { get; set; }
     public DbSet<DbSubmission> Submissions { get; set; }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if (optionsBuilder.IsConfigured) return;
+        
+        // Configure for PostgreSQL naming conventions
+        optionsBuilder.UseNpgsql().UseSnakeCaseNamingConvention();
+    }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<DbUser>(entity =>
@@ -30,7 +38,7 @@ public class AppDbContext : DbContext
             entity.Property(e => e.OrganizationName).HasMaxLength(200);
             entity.Property(e => e.AuthProvider).HasMaxLength(50);
             entity.Property(e => e.PasswordResetToken).HasMaxLength(255);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("SYSUTCDATETIME()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
             entity.Property(e => e.IsActive).HasDefaultValue(true);
             entity.Property(e => e.FailedLoginAttempts).HasDefaultValue(0);
             
@@ -65,7 +73,7 @@ public class AppDbContext : DbContext
             entity.Property(e => e.ContractRef).HasMaxLength(200);
             entity.Property(e => e.BillingContactEmail).HasMaxLength(255);
             entity.Property(e => e.CreatedBy).HasMaxLength(200);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("SYSUTCDATETIME()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
             entity.Property(e => e.RuleUploadAllowed).HasDefaultValue(false);
             entity.Property(e => e.RuleApprovalRequired).HasDefaultValue(true);
             entity.Property(e => e.DefaultRuleVersioning).HasDefaultValue(true);
@@ -93,7 +101,7 @@ public class AppDbContext : DbContext
             entity.Property(e => e.CreatedBy).HasMaxLength(100);
             entity.Property(e => e.MinRevenue).HasPrecision(18, 2);
             entity.Property(e => e.MaxRevenue).HasPrecision(18, 2);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("SYSUTCDATETIME()");
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
             
             // Indexes
             entity.HasIndex(e => new { e.Carrier, e.Product }).HasDatabaseName("IDX_Rules_Carrier_Product");

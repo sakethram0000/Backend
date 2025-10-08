@@ -40,7 +40,7 @@ if (connectionString.StartsWith("postgres://", StringComparison.OrdinalIgnoreCas
     }
 
     builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseNpgsql(npgsqlConn));
+        options.UseNpgsql(npgsqlConn).UseSnakeCaseNamingConvention());
 }
 else
 {
