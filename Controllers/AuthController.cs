@@ -39,11 +39,16 @@ public class AuthController : ControllerBase
                 return BadRequest(new { message = "Email and password are required" });
             }
 
-            // Fetch user from DB with explicit boolean handling
+            // Fetch user from DB without boolean condition to avoid PostgreSQL type issues
             var user = await _context.Users
                 .Where(u => u.Email == request.Email)
-                .Where(u => u.IsActive)
                 .FirstOrDefaultAsync();
+                
+            // Check IsActive in C# code instead of SQL
+            if (user != null && !user.IsActive)
+            {
+                user = null; // Treat inactive users as not found
+            }
 
             if (user == null)
             {
@@ -109,8 +114,12 @@ public class AuthController : ControllerBase
                 return BadRequest(new { message = "Email and password are required" });
             }
 
-            // Check if user already exists
-            if (await _context.Users.AnyAsync(u => u.Email == request.Email))
+            // Check if user already exists (avoid boolean conditions in SQL)
+            var existingUser = await _context.Users
+                .Where(u => u.Email == request.Email)
+                .FirstOrDefaultAsync();
+                
+            if (existingUser != null)
             {
                 return BadRequest(new { message = "User with this email already exists" });
             }

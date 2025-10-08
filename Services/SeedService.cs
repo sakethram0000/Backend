@@ -17,8 +17,9 @@ public class SeedService
 
     public async Task SeedInitialDataAsync()
     {
-        // Check if data already exists
-        if (await _context.Users.AnyAsync())
+        // Check if data already exists (avoid AnyAsync with potential boolean issues)
+        var userCount = await _context.Users.CountAsync();
+        if (userCount > 0)
             return;
 
         var users = new[]

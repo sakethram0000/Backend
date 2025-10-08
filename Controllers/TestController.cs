@@ -94,9 +94,10 @@ public class TestController : ControllerBase
         try
         {
             // Check if users already exist
-            if (await _context.Users.AnyAsync())
+            var userCount = await _context.Users.CountAsync();
+            if (userCount > 0)
             {
-                return Ok(new { message = "Users already exist" });
+                return Ok(new { message = "Users already exist", count = userCount });
             }
 
             var users = new[]
