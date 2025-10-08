@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyWebApi.Data;
+using System.Data.Common;
+using System.Collections.Generic;
 
 namespace MyWebApi.Controllers;
 
@@ -48,6 +50,52 @@ public class DatabaseController : ControllerBase
                 Error = ex.Message,
                 LastChecked = DateTime.UtcNow
             });
+        }
+    }
+
+    /// <summary>
+    /// Diagnostic: return column names and types for a given table (Postgres information_schema compatible).
+    /// Call like: GET /api/database/columns?table=users
+    /// This is read-only and intended to help debug type mismatches (e.g. text vs timestamp).
+    /// </summary>
+    [HttpGet("columns")]
+    public async Task<ActionResult> GetTableColumns([FromQuery] string table)
+    {
+        if (string.IsNullOrWhiteSpace(table))
+            return BadRequest(new { error = "table parameter is required" });
+
+        try
+        {
+            var conn = _context.Database.GetDbConnection();
+            await conn.OpenAsync();
+            using var cmd = conn.CreateCommand();
+
+            // Use information_schema for Postgres; works on most SQL DBs with that view
+            cmd.CommandText = @"SELECT column_name, data_type, udt_name
+                FROM information_schema.columns
+                WHERE table_name = @table
+                ORDER BY ordinal_position";
+
+            var param = cmd.CreateParameter();
+            param.ParameterName = "@table";
+            param.Value = table;
+            cmd.Parameters.Add(param);
+
+            var result = new List<object>();
+            using var reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                var col = reader.IsDBNull(0) ? null : reader.GetString(0);
+                var dtype = reader.IsDBNull(1) ? null : reader.GetString(1);
+                var udt = reader.IsDBNull(2) ? null : reader.GetString(2);
+                result.Add(new { column = col, data_type = dtype, udt_name = udt });
+            }
+
+            return Ok(new { table = table, columns = result });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { error = ex.Message });
         }
     }
 
