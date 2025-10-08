@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MyWebApi.Models;
+using MyWebApi.Data;
 
 namespace MyWebApi.Data;
 
@@ -32,7 +33,10 @@ public class AppDbContext : DbContext
             entity.Property(e => e.OrganizationName).HasMaxLength(200);
             entity.Property(e => e.AuthProvider).HasMaxLength(50);
             entity.Property(e => e.PasswordResetToken).HasMaxLength(255);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
+            entity.Property(e => e.CreatedAt).HasColumnType("text").HasConversion<TextDateTimeConverter>();
+            entity.Property(e => e.LastLoginAt).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
+            entity.Property(e => e.LockoutEnd).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
+            entity.Property(e => e.PasswordResetExpiry).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
             entity.Property(e => e.IsActive).HasColumnType("boolean").HasDefaultValue(true);
             entity.Property(e => e.FailedLoginAttempts).HasDefaultValue(0);
             
@@ -67,7 +71,8 @@ public class AppDbContext : DbContext
             entity.Property(e => e.ContractRef).HasMaxLength(200);
             entity.Property(e => e.BillingContactEmail).HasMaxLength(255);
             entity.Property(e => e.CreatedBy).HasMaxLength(200);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
+            entity.Property(e => e.CreatedAt).HasColumnType("text").HasConversion<TextDateTimeConverter>();
+            entity.Property(e => e.UpdatedAt).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
             entity.Property(e => e.RuleUploadAllowed).HasColumnType("boolean").HasDefaultValue(false);
             entity.Property(e => e.RuleApprovalRequired).HasColumnType("boolean").HasDefaultValue(true);
             entity.Property(e => e.DefaultRuleVersioning).HasColumnType("boolean").HasDefaultValue(true);
@@ -95,7 +100,10 @@ public class AppDbContext : DbContext
             entity.Property(e => e.CreatedBy).HasMaxLength(100);
             entity.Property(e => e.MinRevenue).HasPrecision(18, 2);
             entity.Property(e => e.MaxRevenue).HasPrecision(18, 2);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
+            entity.Property(e => e.CreatedAt).HasColumnType("text").HasConversion<TextDateTimeConverter>();
+            entity.Property(e => e.UpdatedAt).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
+            entity.Property(e => e.EffectiveFrom).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
+            entity.Property(e => e.EffectiveTo).HasColumnType("text").HasConversion<TextNullableDateTimeConverter>();
             
             // Indexes
             entity.HasIndex(e => new { e.Carrier, e.Product }).HasDatabaseName("IDX_Rules_Carrier_Product");
@@ -107,7 +115,7 @@ public class AppDbContext : DbContext
         {
             entity.ToTable("products");
             entity.HasKey(e => e.Id);
-            entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
+            entity.Property(e => e.CreatedAt).HasColumnType("text").HasConversion<TextDateTimeConverter>();
         });
         
         modelBuilder.Entity<DbEvent>(entity =>
