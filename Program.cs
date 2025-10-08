@@ -152,12 +152,27 @@ app.MapControllers();
 // Lightweight root and health endpoints so the service responds at '/'
 app.MapGet("/", () => Results.Ok(new { status = "ok", service = "MyWebApi", env = app.Environment.EnvironmentName }));
 app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
+app.MapGet("/api/health", () => Results.Ok(new { status = "healthy", timestamp = DateTime.UtcNow }));
 
-// Seed initial data
+// Ensure database is created and seed initial data
 using (var scope = app.Services.CreateScope())
 {
-    var seedService = scope.ServiceProvider.GetRequiredService<SeedService>();
-    await seedService.SeedInitialDataAsync();
+    try
+    {
+        var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        
+        // Ensure database is created
+        await context.Database.EnsureCreatedAsync();
+        
+        // Seed initial data
+        var seedService = scope.ServiceProvider.GetRequiredService<SeedService>();
+        await seedService.SeedInitialDataAsync();
+    }
+    catch (Exception ex)
+    {
+        // Log the error but don't crash the application
+        Console.WriteLine($"Database initialization error: {ex.Message}");
+    }
 }
 
 app.Run();

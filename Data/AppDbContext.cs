@@ -14,13 +14,7 @@ public class AppDbContext : DbContext
     public DbSet<DbEvent> Events { get; set; }
     public DbSet<DbSubmission> Submissions { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        if (optionsBuilder.IsConfigured) return;
-        
-        // Configure for PostgreSQL naming conventions
-        optionsBuilder.UseNpgsql().UseSnakeCaseNamingConvention();
-    }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -39,7 +33,7 @@ public class AppDbContext : DbContext
             entity.Property(e => e.AuthProvider).HasMaxLength(50);
             entity.Property(e => e.PasswordResetToken).HasMaxLength(255);
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
-            entity.Property(e => e.IsActive).HasDefaultValue(true);
+            entity.Property(e => e.IsActive).HasColumnType("boolean").HasDefaultValue(true);
             entity.Property(e => e.FailedLoginAttempts).HasDefaultValue(0);
             
             // Indexes
@@ -74,10 +68,10 @@ public class AppDbContext : DbContext
             entity.Property(e => e.BillingContactEmail).HasMaxLength(255);
             entity.Property(e => e.CreatedBy).HasMaxLength(200);
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
-            entity.Property(e => e.RuleUploadAllowed).HasDefaultValue(false);
-            entity.Property(e => e.RuleApprovalRequired).HasDefaultValue(true);
-            entity.Property(e => e.DefaultRuleVersioning).HasDefaultValue(true);
-            entity.Property(e => e.UseNaicsEnrichment).HasDefaultValue(false);
+            entity.Property(e => e.RuleUploadAllowed).HasColumnType("boolean").HasDefaultValue(false);
+            entity.Property(e => e.RuleApprovalRequired).HasColumnType("boolean").HasDefaultValue(true);
+            entity.Property(e => e.DefaultRuleVersioning).HasColumnType("boolean").HasDefaultValue(true);
+            entity.Property(e => e.UseNaicsEnrichment).HasColumnType("boolean").HasDefaultValue(false);
             
             // Indexes
             entity.HasIndex(e => e.DisplayName).HasDatabaseName("IDX_Carriers_DisplayName");
@@ -108,9 +102,24 @@ public class AppDbContext : DbContext
             entity.HasIndex(e => e.NaicsCodes).HasDatabaseName("IDX_Rules_Naics");
             entity.HasIndex(e => new { e.Status, e.EffectiveFrom, e.EffectiveTo }).HasDatabaseName("IDX_Rules_Status_Eff");
         });
-        // Map other entities that don't have custom configuration
-        modelBuilder.Entity<DbProduct>().ToTable("products");
-        modelBuilder.Entity<DbEvent>().ToTable("events");
-        modelBuilder.Entity<DbSubmission>().ToTable("submissions");
+        // Configure other entities
+        modelBuilder.Entity<DbProduct>(entity =>
+        {
+            entity.ToTable("products");
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("NOW()");
+        });
+        
+        modelBuilder.Entity<DbEvent>(entity =>
+        {
+            entity.ToTable("events");
+            entity.HasKey(e => e.EventId);
+        });
+        
+        modelBuilder.Entity<DbSubmission>(entity =>
+        {
+            entity.ToTable("submissions");
+            entity.HasKey(e => e.SubmissionId);
+        });
     }
 }

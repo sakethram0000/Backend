@@ -39,8 +39,11 @@ public class AuthController : ControllerBase
                 return BadRequest(new { message = "Email and password are required" });
             }
 
-            // Fetch user from DB (ensure 'user' is declared in this scope)
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email && u.IsActive);
+            // Fetch user from DB with explicit boolean handling
+            var user = await _context.Users
+                .Where(u => u.Email == request.Email)
+                .Where(u => u.IsActive)
+                .FirstOrDefaultAsync();
 
             if (user == null)
             {
