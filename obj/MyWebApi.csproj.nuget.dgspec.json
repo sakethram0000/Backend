@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\backend\\Backend\\MyWebApi.csproj": {}
+    "c:\\backend\\Backend\\MyWebApi.csproj": {}
   },
   "projects": {
-    "C:\\backend\\Backend\\MyWebApi.csproj": {
+    "c:\\backend\\Backend\\MyWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\backend\\Backend\\MyWebApi.csproj",
+        "projectUniqueName": "c:\\backend\\Backend\\MyWebApi.csproj",
         "projectName": "MyWebApi",
-        "projectPath": "C:\\backend\\Backend\\MyWebApi.csproj",
+        "projectPath": "c:\\backend\\Backend\\MyWebApi.csproj",
         "packagesPath": "C:\\Users\\SakethRamRagi\\.nuget\\packages\\",
-        "outputPath": "C:\\backend\\Backend\\obj\\",
+        "outputPath": "c:\\backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SakethRamRagi\\AppData\\Roaming\\NuGet\\NuGet.Config"
